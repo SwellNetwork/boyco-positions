@@ -15,11 +15,14 @@ DECIMAL_ADJ = Decimal(f"1e18")
 COL = 'input_token_raw_amount'
 
 # filter for market
+df['market_id'] = df['market_id'].str.lower()
 df = df[df['market_id'] == RSWETH_KODIAK_MARKET_ID]
+
+# logger.info("Address count: {}", df['account_address'].nunique())
 
 logger.info("Starting airdrop process...")
 logger.info("Dataframe shape: {}", df.shape)
-logger.info("Dataframe columns: {}", df.columns)
+# logger.info("Dataframe columns: {}", df.columns)
 
 # select relevant columns
 df = df[['account_address', COL]]
