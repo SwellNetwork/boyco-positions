@@ -1,6 +1,7 @@
 import pandas as pd
 from loguru import logger
 from decimal import Decimal, getcontext
+import json
 
 # Set precision high enough to handle large numbers
 getcontext().prec = 50
@@ -82,6 +83,28 @@ else:
 
 df['swell_amount'] = df['swell_amount_wei']/ DECIMAL_ADJ
 
+# create merkl json
+reward_token = "0x0a6E7Ba5042B38349e437ec6Db6214AEC7B35676"
+rewards = {}
+for _, row in df.iterrows():
+    address = row["account_address"]
+    project = "Berachain Royco"
+    wei = str(row["swell_amount_wei"])
+
+    # If address not in result, create new dict
+    if address not in rewards:
+        rewards[address] = {}
+
+    # Add project and wei to address dict
+    rewards[address][project] = wei
+
+airdrop_json = {"rewardToken": reward_token, "rewards": rewards}
+
 df.to_csv("csvs/out/boyco_airdrop.csv", index=False)
+# Save airdrop_json to a JSON file
+with open("jsons/out/boyco_airdrop.json", "w") as json_file:
+    json.dump(airdrop_json, json_file, indent=4)
+
+logger.info("Airdrop JSON saved to jsons/out/boyco_airdrop.json")
 logger.info("Airdrop process completed.")
 logger.info("Airdrop CSV saved to csvs/out/airdrop.csv")

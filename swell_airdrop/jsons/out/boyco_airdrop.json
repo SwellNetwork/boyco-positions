@@ -1,0 +1,44 @@
+{
+    "rewardToken": "0x0a6E7Ba5042B38349e437ec6Db6214AEC7B35676",
+    "rewards": {
+        "0xf393b9cf02eb6d21846000f2c4ecdfb70083df9c": {
+            "Berachain Royco": "2982007370336721985335323"
+        },
+        "0x915250124abf3c3f4e6a52ef99b1bd0f9d33db15": {
+            "Berachain Royco": "2886462487549357229383901"
+        },
+        "0x465050115c77566c87344b740a40095444bc0205": {
+            "Berachain Royco": "1010466769355442996103878"
+        },
+        "0xeec9a04dc68ef92c7a3cca6334b07cf89f1e3a84": {
+            "Berachain Royco": "1010398165147373308523642"
+        },
+        "0xae883b12d9fbc702869c13d7876a69cbbf05efad": {
+            "Berachain Royco": "1009802918746679322245719"
+        },
+        "0xe08753f2caf86cfa29ce24b1ca765f6f3a25a68d": {
+            "Berachain Royco": "312493948260666287171930"
+        },
+        "0x43e00720bcbe904f70194300b58c46a3613bef4c": {
+            "Berachain Royco": "288505183904252438153036"
+        },
+        "0xd3d9da1ff30c6ab3884710983f5cc0ab6d5904e2": {
+            "Berachain Royco": "203699066978169237913254"
+        },
+        "0xa36023c6fb821d02de6ea9926481e8caf8d00d2b": {
+            "Berachain Royco": "122634422602272970657499"
+        },
+        "0x095c938780605911df64dc66342c3260989e68a9": {
+            "Berachain Royco": "111805514496704293474324"
+        },
+        "0x81e14e07493bd2a3ad29bb7dab1f26de9c98151b": {
+            "Berachain Royco": "32606493156048652189248"
+        },
+        "0xf390b23ff4194fea74c3405f8d8acad6032cdd77": {
+            "Berachain Royco": "28891425647687496283918"
+        },
+        "0x5ae60fdd3b5edc65bc44fc32738628ab4144a61f": {
+            "Berachain Royco": "226233818623782564328"
+        }
+    }
+}
